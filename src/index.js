@@ -1,6 +1,6 @@
+const openingSymbols = ['(', '[', '{', '<'];
+const closingSymbols = [')', ']', '}', '>'];
 const isBracketStructureBalanced = (string) => {
-  const openingSymbols = ['(', '[', '{', '<'];
-  const closingSymbols = [')', ']', '}', '>'];
   const stack = [];
   for (const i of string) {
     if (openingSymbols.includes(i)) {
